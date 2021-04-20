@@ -26,12 +26,12 @@ function cb_child_process_location( $location = null ) {
 function hello_elementor_admin_menu() {
     add_menu_page(
             'Escola Elementor',
-            'Suporte Escola Elementor',
+            'pepyPremium',
             'manage_options',
-            'https://escolaelementor.com/?pepy',
+            'https://pepy.link/tema-help',
             '',
             '',
-            99
+            999
     );
     
 }
@@ -89,7 +89,7 @@ function hello_elementor_gutenberg_suport (){
 	add_theme_support( 'wp-block-styles' );
 	add_theme_support( 'editor-styles' );
 	add_theme_support( 'dark-editor-style' );
-	//add_theme_support( 'align-wide' );
+	add_theme_support( 'align-wide' );
 
 }
 

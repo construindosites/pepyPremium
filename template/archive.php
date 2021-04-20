@@ -16,8 +16,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 			
 		</header>
 	<?php endif; ?>
-	<div class="page-content" style="display: none">
-		<?php the_content(); ?>
+	<div class="page-content">
+		
 	</div>
 	
 	<?php wp_link_pages(); ?>
@@ -26,11 +26,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 	global $wp_query;
 	if ( $wp_query->max_num_pages > 1 ) :
 		?>
-		<nav class="pagination" role="navigation">
-			<?php /* Translators: HTML arrow */ ?>
-			<div class="nav-previous"><?php next_posts_link( sprintf( __( '%s older', 'hello-elementor' ), '<span class="meta-nav">&larr;</span>' ) ); ?></div>
-			<?php /* Translators: HTML arrow */ ?>
-			<div class="nav-next"><?php previous_posts_link( sprintf( __( 'newer %s', 'hello-elementor' ), '<span class="meta-nav">&rarr;</span>' ) ); ?></div>
-		</nav>
+		
 	<?php endif; ?>
 </main>

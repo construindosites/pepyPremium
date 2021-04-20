@@ -94,23 +94,20 @@ function hello_elementor_child_register_required_plugins() {
 			'slug'      => 'header-footer-elementor',
 			'required'  => true,
 		),
+
 		array(
-			'name'      => 'HT Mega',
-			'slug'      => 'ht-mega-for-elementor',
-			'required'  => true,
-		),
-		array(
-			'name'      => 'Blog Designer',
-			'slug'      => 'bloglentor-for-elementor',
+			'name'      => 'Jkit',
+			'slug'      => 'jeg-elementor-kit',
 			'required'  => false,
 		),
-		//Plguins do GitHub
-		
+
 		array(
-			'name'      => 'Tags dinamicas',
+			'name'      => 'e-addons',
 			'slug'      => 'e-addons-for-elementor',
 			'source'    => 'https://github.com/nerds-farm/e-addons-for-elementor/archive/master.zip',
+
 		),
+				
 		array(
 			'name'      => 'Rank Math – SEO Plugin for WordPress',
 			'slug'      => 'seo-by-rank-math',
@@ -121,13 +118,7 @@ function hello_elementor_child_register_required_plugins() {
 			'slug'      => 'fluentform',
 			'required'  => false,
 		),
-		array(
-			'name'      => 'Site Kit by Google',
-			'slug'      => 'google-site-kit',
-			'required'  => false,
-		),
-
-
+		
 		// This is an example of the use of 'is_callable' functionality. A user could - for instance -
 		// have WPSEO installed *or* WPSEO Premium. The slug would in that last case be different, i.e.
 		// 'wordpress-seo-premium'.

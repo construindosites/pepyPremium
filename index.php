@@ -13,9 +13,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 get_header();
 
-if ( is_singular() ) {
+if ( is_page() ) {
 	if ( ! cb_child_process_location( 'single' ) ) {
-		get_template_part( 'template/single' );
+		get_template_part( 'template/page' );
+
 	}
 } elseif ( is_archive() || is_home() ) {
 	if ( ! cb_child_process_location( 'archive' ) ) {
@@ -24,8 +25,14 @@ if ( is_singular() ) {
 } elseif ( is_search() ) {
 	if ( ! cb_child_process_location( 'archive' ) ) {
 		get_template_part( 'template/search' );
-	}
-} else {
+	}	
+} elseif ( is_singular() ) {
+	if ( ! cb_child_process_location( 'single' ) ) {
+		get_template_part( 'template/single' );
+	}	
+} 
+
+else {
 	if ( ! cb_child_process_location( 'single' ) ) {
 		get_template_part( 'template/404' );
 	}
