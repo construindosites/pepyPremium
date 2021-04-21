@@ -3,6 +3,7 @@
 *
 * Templete Name: Elementor Templete Extra
 *
+* @package HelloElementor
 */
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
@@ -10,8 +11,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 
 
-<main class="pepy" <?php post_class( 'site-main' ); ?> role="main">
-
-		<?php the_content(); ?>
+<main class="pepy">
 		
 </main>

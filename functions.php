@@ -41,7 +41,9 @@ add_action('admin_menu', 'hello_elementor_admin_menu');
 if ( is_admin() ) {
 	require 'class-tgm-plugin-activation.php';
 	require 'rec.php';
+	//require 'pepypremium.php';
 } 
+
 
 
 function hello_elementor_widgets_init() {

@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying singular post-types: posts, and user-defined custom post types.
+ * The template for displaying singular post-types: posts, pages and user-defined custom post types.
  *
  * @package HelloElementor
  */
@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 while ( have_posts() ) : the_post();
 	?>
 
-<main class="pepy3" <?php post_class( 'site-main' ); ?> role="main">
+<main class="pepy" <?php post_class( 'site-main' ); ?> role="main">
 	<?php if ( apply_filters( 'hello_elementor_page_title', true ) ) : ?>
 		<header class="page-header">
 			
