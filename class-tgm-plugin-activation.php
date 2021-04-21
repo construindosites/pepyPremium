@@ -2363,10 +2363,10 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 		 */
 		protected function get_plugin_advise_type_text( $required ) {
 			if ( true === $required ) {
-				return __( 'Required', 'tgmpa' );
+				return __( '<strong style="color:#9a0b0b; font-size: 16px;"> Required </strong>', 'tgmpa' );
 			}
 
-			return __( 'Recommended', 'tgmpa' );
+			return __( '<i> Recommended </i>', 'tgmpa' );
 		}
 
 		/**

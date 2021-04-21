@@ -90,9 +90,15 @@ function hello_elementor_child_register_required_plugins() {
 		// This is an example of how to include a plugin from the WordPress Plugin Repository.
 		//Plugins do repositorio oficial 
 		array(
-			'name'      => 'Blocos e Templetes',
+			'name'      => 'Header, Footer & Blocks Template',
 			'slug'      => 'header-footer-elementor',
 			'required'  => true,
+		),
+		array(
+			'name'      => 'e-addons',
+			'slug'      => 'e-addons-for-elementor',
+			'source'    => 'https://github.com/nerds-farm/e-addons-for-elementor/archive/master.zip',
+            'required'  => true,
 		),
 
 		array(
@@ -101,13 +107,6 @@ function hello_elementor_child_register_required_plugins() {
 			'required'  => false,
 		),
 
-		array(
-			'name'      => 'e-addons',
-			'slug'      => 'e-addons-for-elementor',
-			'source'    => 'https://github.com/nerds-farm/e-addons-for-elementor/archive/master.zip',
-
-		),
-				
 		array(
 			'name'      => 'Rank Math – SEO Plugin for WordPress',
 			'slug'      => 'seo-by-rank-math',
