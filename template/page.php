@@ -12,5 +12,5 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 
 <main class="pepy">
-		
+
 </main>
