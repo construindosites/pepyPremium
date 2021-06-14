@@ -9,8 +9,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 ?>
-
-
 <main class="pepy">
-
+ <?php the_content(); ?>
 </main>
