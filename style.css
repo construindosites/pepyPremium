@@ -5,8 +5,12 @@ Github Theme URI: https://github.com/construindosites/pepyPremium
 Author URI: https://douglasgaspar.com
 Description: Crie sites completos com o elementor FREE
 Template: hello-elementor
-Version: 2.0 
+Version: 2.4.1
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: hello-elementor
 */
+/* Remover o espaço em branco após o footer */
+#main #content-wrap {
+padding-bottom: 0;
+}
