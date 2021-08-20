@@ -10,5 +10,5 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 <main class="pepy">
- <?php the_content(); ?>
+ <?php while ( have_posts() ) :	the_post(); the_content(); ?>
 </main>
