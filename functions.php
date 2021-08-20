@@ -1,31 +1,31 @@
 <?php
 /**
- * Child functions and definitions.
+ * Theme functions and definitions
+ *
+ * @package HelloElementorChild
  */
 
 /**
- * Process single location
+ * Load child theme css and optional scripts
  *
  * @return void
  */
-function cb_child_process_location( $location = null ) {
-
-	if ( ! function_exists( 'jet_theme_core' ) ) {
-		return false;
-	}
-	if( ! defined( 'ELEMENTOR_VERSION' ) ) {
-		return false;
-	}
-
-	$done = jet_theme_core()->locations->do_location( $location );
-
-	return $done;
-
+ 
+function hello_elementor_child_enqueue_scripts() {
+	wp_enqueue_style(
+		'hello-elementor-child-style',
+		get_stylesheet_directory_uri() . '/style.css',
+		[
+			'hello-elementor-theme-style',
+		],
+		'1.0.0'
+	);
 }
+add_action( 'wp_enqueue_scripts', 'hello_elementor_child_enqueue_scripts', 20 );
 
 function hello_elementor_admin_menu() {
     add_menu_page(
-            'Escola Elementor',
+            'Construindo Sites',
             'pepyPremium',
             'manage_options',
             'https://pepy.link/tema-help',
@@ -41,7 +41,6 @@ add_action('admin_menu', 'hello_elementor_admin_menu');
 if ( is_admin() ) {
 	require 'class-tgm-plugin-activation.php';
 	require 'rec.php';
-	//require 'pepypremium.php';
 } 
 
 
