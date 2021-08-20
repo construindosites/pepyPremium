@@ -13,28 +13,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 get_header();
 
-if ( is_page() ) {
-	if ( ! cb_child_process_location( 'single' ) ) {
-		get_template_part( 'template/page' );
+$is_elementor_theme_exist = function_exists( 'elementor_theme_do_location' );
 
+if ( is_singular() ) {
+	if ( ! $is_elementor_theme_exist || ! elementor_theme_do_location( 'single' ) ) {
+		get_template_part( 'template-parts/page' );
 	}
 } elseif ( is_archive() || is_home() ) {
-	if ( ! cb_child_process_location( 'archive' ) ) {
-		get_template_part( 'template/archive' );
-	}
-} elseif ( is_search() ) {
-	if ( ! cb_child_process_location( 'archive' ) ) {
-		get_template_part( 'template/search' );
-	}	
-} elseif ( is_singular() ) {
-	if ( ! cb_child_process_location( 'single' ) ) {
-		get_template_part( 'template/single' );
-	}	
-} 
-
-else {
-	if ( ! cb_child_process_location( 'single' ) ) {
-		get_template_part( 'template/404' );
+	if ( ! $is_elementor_theme_exist || ! elementor_theme_do_location( 'archive' ) ) {
+		get_template_part( 'template-parts/page' );
 	}
 }
 
