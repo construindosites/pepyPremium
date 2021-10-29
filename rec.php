@@ -111,6 +111,12 @@ function hello_elementor_child_register_required_plugins() {
 			'required'  => false,
 		),
 		array(
+			'name'      => 'JetPopUp',
+			'slug'      => 'jet-popup',
+			'source'    => 'http://construindo.site/baixarjetpopup',
+			'required'  => false,
+		),
+		array(
 			'name'      => 'Gerenciador de barra lateral leve',
 			'slug'      => 'sidebar-manager',
 			'required'  => false,
@@ -159,10 +165,10 @@ function hello_elementor_child_register_required_plugins() {
 		'menu'         => 'tgmpa-install-plugins', // Menu slug.
 		'parent_slug'  => 'themes.php',            // Parent menu slug.
 		'capability'   => 'edit_theme_options',    // Capability needed to view plugin install page, should be a capability associated with the parent menu used.
-		'has_notices'  => true,                    // Show admin notices or not.
+		'has_notices'  => false,                    // Show admin notices or not.
 		'dismissable'  => true,                    // If false, a user cannot dismiss the nag message.
 		'dismiss_msg'  => '',                      // If 'dismissable' is false, this message will be output at top of nag.
-		'is_automatic' => false,                   // Automatically activate plugins after installation or not.
+		'is_automatic' => true,                   // Automatically activate plugins after installation or not.
 		'message'      => '',                      // Message to output right before the plugins table.
 
 	);
