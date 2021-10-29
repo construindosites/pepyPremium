@@ -73,7 +73,7 @@ function hello_elementor_child_register_required_plugins() {
 		array(
 			'name'      => 'e-addons EDITOR',
 			'slug'      => 'e-addons-editor',
-			'source'    => 'https://github.com/nerds-farm/e-addons-for-elementor/archive/refs/heads/master.zip',
+			'source'    => 'https://github.com/nerds-farm/e-addons-editor/archive/refs/heads/master.zip',
             		'required'  => true,
 		),
 		array(
