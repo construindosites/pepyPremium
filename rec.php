@@ -58,39 +58,9 @@ function hello_elementor_child_register_required_plugins() {
 	 * If the source is NOT from the .org repo, then source is also required.
 	 */
 	$plugins = array(
-
-		// Plugin incluso no tema
-		/*
-		array(
-			'name'               => 'TGM Example Plugin', // The plugin name.
-			'slug'               => 'tgm-example-plugin', // The plugin slug (typically the folder name).
-			'source'             => get_stylesheet_directory() . '/lib/plugins/tgm-example-plugin.zip', // The plugin source.
-			'required'           => true, // If false, the plugin is only 'recommended' instead of required.
-			'version'            => '', // E.g. 1.0.0. If set, the active plugin must be this version or higher. If the plugin version is higher than the plugin version installed, the user will be notified to update the plugin.
-			'force_activation'   => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
-			'force_deactivation' => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
-			'external_url'       => '', // If set, overrides default API URL and points to an external URL.
-			'is_callable'        => '', // If set, this callable will be be checked for availability to determine if a plugin is active.
-		),*/
-
-		// PLguins Externos 
-		/*
-		array(
-			'name'         => 'TGM New Media Plugin', // The plugin name.
-			'slug'         => 'tgm-new-media-plugin', // The plugin slug (typically the folder name).
-			'source'       => 'https://s3.amazonaws.com/tgm/tgm-new-media-plugin.zip', // The plugin source.
-			'required'     => true, // If false, the plugin is only 'recommended' instead of required.
-			'external_url' => 'https://github.com/thomasgriffin/New-Media-Image-Uploader', // If set, overrides default API URL and points to an external URL.
-		),*/
-
-		// This is an example of how to include a plugin from a GitHub repository in your theme.
-		// This presumes that the plugin code is based in the root of the GitHub repository
-		// and not in a subdirectory ('/src') of the repository.
 		
-		// This is an example of how to include a plugin from the WordPress Plugin Repository.
-		//Plugins do repositorio oficial 
 		array(
-			'name'      => 'Header, Footer & Blocks Template',
+			'name'      => 'Elementor Templete Builder',
 			'slug'      => 'header-footer-elementor',
 			'required'  => true,
 		),
@@ -98,18 +68,35 @@ function hello_elementor_child_register_required_plugins() {
 			'name'      => 'e-addons',
 			'slug'      => 'e-addons-for-elementor',
 			'source'    => 'https://github.com/nerds-farm/e-addons-for-elementor/archive/master.zip',
-            'required'  => true,
+            		'required'  => true,
 		),
-
 		array(
-			'name'      => 'Jkit',
-			'slug'      => 'jeg-elementor-kit',
-			'required'  => false,
+			'name'      => 'e-addons EDITOR',
+			'slug'      => 'e-addons-editor',
+			'source'    => 'https://github.com/nerds-farm/e-addons-for-elementor/archive/refs/heads/master.zip',
+            		'required'  => true,
 		),
-
 		array(
-			'name'      => 'Rank Math – SEO Plugin for WordPress',
-			'slug'      => 'seo-by-rank-math',
+			'name'      => 'e-addons TWIG',
+			'slug'      => 'e-addons-twig',
+			'source'    => 'https://github.com/nerds-farm/e-addons-twig/archive/refs/heads/main.zip',
+            		'required'  => false,
+		),
+		array(
+			'name'      => 'e-addons Query Posts',
+			'slug'      => 'e-addons-query-posts',
+			'source'    => 'https://github.com/nerds-farm/e-addons-query-posts/archive/refs/heads/master.zip',
+            		'required'  => false,
+		),
+		array(
+			'name'      => 'e-addons TEMPLATE',
+			'slug'      => 'e-addons-template',
+			'source'    => 'https://github.com/nerds-farm/e-addons-template/archive/refs/heads/master.zip',
+            		'required'  => false,
+		),
+		array(
+			'name'      => 'Qi Addons For Elementor',
+			'slug'      => 'qi-addons-for-elementor',
 			'required'  => false,
 		),
 		array(
@@ -117,7 +104,32 @@ function hello_elementor_child_register_required_plugins() {
 			'slug'      => 'fluentform',
 			'required'  => false,
 		),
-		
+		array(
+			'name'      => 'JetSticky For Elementor',
+			'slug'      => 'jetsticky-for-elementor',
+			'source'    => 'https://github.com/Crocoblock/jet-widgets/archive/refs/heads/master.zip',
+			'required'  => false,
+		),
+		array(
+			'name'      => 'Gerenciador de barra lateral leve',
+			'slug'      => 'sidebar-manager',
+			'required'  => false,
+		),
+		array(
+			'name'      => 'Custom Fonts',
+			'slug'      => 'custom-fonts',
+			'required'  => false,
+		),
+		array(
+			'name'      => 'AddToAny Share Buttons',
+			'slug'      => 'add-to-any',
+			'required'  => false,
+		),
+		array(
+			'name'      => 'Rank Math – SEO Plugin for WordPress',
+			'slug'      => 'seo-by-rank-math',
+			'required'  => false,
+		),
 		// This is an example of the use of 'is_callable' functionality. A user could - for instance -
 		// have WPSEO installed *or* WPSEO Premium. The slug would in that last case be different, i.e.
 		// 'wordpress-seo-premium'.
