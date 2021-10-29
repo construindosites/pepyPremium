@@ -107,7 +107,7 @@ function hello_elementor_child_register_required_plugins() {
 		array(
 			'name'      => 'JetSticky For Elementor',
 			'slug'      => 'jetsticky-for-elementor',
-			'source'    => 'https://github.com/Crocoblock/jet-widgets/archive/refs/heads/master.zip',
+			'source'    => 'https://downloads.wordpress.org/plugin/jetsticky-for-elementor.zip',
 			'required'  => false,
 		),
 		array(
