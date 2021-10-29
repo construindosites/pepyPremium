@@ -11,6 +11,3 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: hello-elementor
 */
 /* Remover o espaço em branco após o footer */
-#main #content-wrap {
-padding-bottom: 0;
-}
