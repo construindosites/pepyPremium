@@ -60,8 +60,8 @@ function hello_elementor_child_register_required_plugins() {
 	$plugins = array(
 		
 		array(
-			'name'      => 'Elementor Templete Builder',
-			'slug'      => 'header-footer-elementor',
+			'name'      => 'Studio Element Kit',
+			'slug'      => 'lastudio-element-kit',
 			'required'  => true,
 		),
 		array(
@@ -111,12 +111,6 @@ function hello_elementor_child_register_required_plugins() {
 			'required'  => false,
 		),
 		array(
-			'name'      => 'JetPopUp',
-			'slug'      => 'jet-popup',
-			'source'    => 'http://construindo.site/baixarjetpopup',
-			'required'  => false,
-		),
-		array(
 			'name'      => 'Gerenciador de barra lateral leve',
 			'slug'      => 'sidebar-manager',
 			'required'  => false,
@@ -124,11 +118,6 @@ function hello_elementor_child_register_required_plugins() {
 		array(
 			'name'      => 'Custom Fonts',
 			'slug'      => 'custom-fonts',
-			'required'  => false,
-		),
-		array(
-			'name'      => 'AddToAny Share Buttons',
-			'slug'      => 'add-to-any',
 			'required'  => false,
 		),
 		array(
