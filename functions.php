@@ -10,7 +10,6 @@
  *
  * @return void
  */
- 
 function hello_elementor_child_enqueue_scripts() {
 	wp_enqueue_style(
 		'hello-elementor-child-style',
@@ -22,7 +21,7 @@ function hello_elementor_child_enqueue_scripts() {
 	);
 }
 add_action( 'wp_enqueue_scripts', 'hello_elementor_child_enqueue_scripts', 20 );
-
+//menu pepyPremium
 function hello_elementor_admin_menu() {
     add_menu_page(
             'Construindo Sites',
@@ -37,11 +36,13 @@ function hello_elementor_admin_menu() {
 }
 add_action('admin_menu', 'hello_elementor_admin_menu');
 
+//Plugins de ouro
 if ( is_admin() ) {
 	require 'class-tgm-plugin-activation.php';
 	require 'rec.php';
 } 
 
+//Suporte ao Gutenberg
 function hello_elementor_gutenberg_suport (){
 
 	add_theme_support( 'responsive-embeds' );
