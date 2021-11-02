@@ -100,14 +100,19 @@ function hello_elementor_child_register_required_plugins() {
 			'required'  => false,
 		),
 		array(
-			'name'      => 'Fluent Forms',
-			'slug'      => 'fluentform',
-			'required'  => false,
-		),
-		array(
 			'name'      => 'JetSticky For Elementor',
 			'slug'      => 'jetsticky-for-elementor',
 			'source'    => 'https://downloads.wordpress.org/plugin/jetsticky-for-elementor.zip',
+			'required'  => false,
+		),
+		array(
+			'name'      => 'Elementor Blocks for Gutenberg',
+			'slug'      => 'block-builder',
+			'required'  => false,
+		),
+		array(
+			'name'      => 'Fluent Forms',
+			'slug'      => 'fluentform',
 			'required'  => false,
 		),
 		array(
