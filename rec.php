@@ -71,30 +71,6 @@ function hello_elementor_child_register_required_plugins() {
             		'required'  => true,
 		),
 		array(
-			'name'      => 'e-addons EDITOR',
-			'slug'      => 'e-addons-editor',
-			'source'    => 'https://github.com/nerds-farm/e-addons-editor/archive/refs/heads/master.zip',
-            		'required'  => true,
-		),
-		array(
-			'name'      => 'e-addons TWIG',
-			'slug'      => 'e-addons-twig',
-			'source'    => 'https://github.com/nerds-farm/e-addons-twig/archive/refs/heads/main.zip',
-            		'required'  => false,
-		),
-		array(
-			'name'      => 'e-addons Query Posts',
-			'slug'      => 'e-addons-query-posts',
-			'source'    => 'https://github.com/nerds-farm/e-addons-query-posts/archive/refs/heads/master.zip',
-            		'required'  => false,
-		),
-		array(
-			'name'      => 'e-addons TEMPLATE',
-			'slug'      => 'e-addons-template',
-			'source'    => 'https://github.com/nerds-farm/e-addons-template/archive/refs/heads/master.zip',
-            		'required'  => false,
-		),
-		array(
 			'name'      => 'Qi Addons For Elementor',
 			'slug'      => 'qi-addons-for-elementor',
 			'required'  => false,
