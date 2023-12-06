@@ -65,35 +65,8 @@ function hello_elementor_child_register_required_plugins() {
 			'required'  => true,
 		),
 		array(
-			'name'      => 'e-addons',
-			'slug'      => 'e-addons-for-elementor',
-			'source'    => 'https://github.com/nerds-farm/e-addons-for-elementor/archive/master.zip',
-            		'required'  => true,
-		),
-		array(
-			'name'      => 'Qi Addons For Elementor',
-			'slug'      => 'qi-addons-for-elementor',
-			'required'  => false,
-		),
-		array(
-			'name'      => 'JetSticky For Elementor',
-			'slug'      => 'jetsticky-for-elementor',
-			'source'    => 'https://downloads.wordpress.org/plugin/jetsticky-for-elementor.zip',
-			'required'  => false,
-		),
-		array(
-			'name'      => 'Elementor Blocks for Gutenberg',
-			'slug'      => 'block-builder',
-			'required'  => false,
-		),
-		array(
-			'name'      => 'Fluent Forms',
-			'slug'      => 'fluentform',
-			'required'  => false,
-		),
-		array(
-			'name'      => 'Gerenciador de barra lateral leve',
-			'slug'      => 'sidebar-manager',
+			'name'      => 'jetForm Builder',
+			'slug'      => 'jetformbuilder',
 			'required'  => false,
 		),
 		array(
